@@ -1,0 +1,12 @@
+# Gradle
+.gradle
+gradle
+gradlew
+gradlew.bat
+
+# IntelliJ
+.idea
+
+# Build
+.kotlin
+build
