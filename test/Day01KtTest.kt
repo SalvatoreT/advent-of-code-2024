@@ -3,7 +3,6 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class Day01KtTest {
-
     @Test
     fun day01part1() {
         assertEquals(11, day01part1(Path("resources/day01.example.txt")))
