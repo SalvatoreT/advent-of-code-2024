@@ -10,7 +10,7 @@ class Day03KtTest {
 
     @Test
     fun day03part1() {
-        println("Day 3 Part 1 is ${day03part1(Path("resources/day03.first.txt"))}")
+        println("Day 3 Part 1 is ${day03part1(Path("resources/day03.input.txt"))}")
     }
 
     @Test
@@ -20,6 +20,6 @@ class Day03KtTest {
 
     @Test
     fun day03part2() {
-        println("Day 3 Part 2 is ${day03part2(Path("resources/day03.first.txt"))}")
+        println("Day 3 Part 2 is ${day03part2(Path("resources/day03.input.txt"))}")
     }
 }
