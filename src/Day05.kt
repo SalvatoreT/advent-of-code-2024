@@ -38,7 +38,15 @@ fun day05part2(path: Path): Int {
             }
     val newUpdates =
         updates.map { update ->
-            var new = ""
+            update.sortedWith { left, right ->
+                if (orders[left]?.contains(right) == true) {
+                    -1
+                } else if (orders[right]?.contains(left) == true) {
+                    1
+                } else {
+                    0
+                }
+            }
         }
     return newUpdates.sumOf { update -> update[(update.size / 2)] }
 }
