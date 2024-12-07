@@ -1,7 +1,7 @@
 import java.nio.file.Path
 import kotlin.io.path.readLines
 
-fun day05part1(path: Path): Int {
+fun day05part01(path: Path): Int {
     val input = path.readLines()
     val (rawOrders, rawUpdates) =
         input
@@ -20,7 +20,7 @@ fun day05part1(path: Path): Int {
     return updates.sumOf { update -> update[(update.size / 2)] }
 }
 
-fun day05part2(path: Path): Int {
+fun day05part02(path: Path): Int {
     val input = path.readLines()
     val (rawOrders, rawUpdates) =
         input

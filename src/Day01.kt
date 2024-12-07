@@ -2,7 +2,7 @@ import java.nio.file.Path
 import kotlin.io.path.readLines
 import kotlin.math.abs
 
-fun day01part1(path: Path): Int {
+fun day01part01(path: Path): Int {
     val (left, right) =
         path
             .readLines()
@@ -15,7 +15,7 @@ fun day01part1(path: Path): Int {
         .sumOf { (left, right) -> abs(left - right) }
 }
 
-fun day01part2(path: Path): Int {
+fun day01part02(path: Path): Int {
     val (left, right) =
         path
             .readLines()

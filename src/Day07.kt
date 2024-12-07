@@ -2,7 +2,7 @@ import java.math.BigInteger
 import java.nio.file.Path
 import kotlin.io.path.readLines
 
-fun day07part1(path: Path): BigInteger =
+fun day07part01(path: Path): BigInteger =
     path
         .readLines()
         .map { line ->
@@ -33,7 +33,7 @@ fun isValidEquation(
     }
 }
 
-fun day07part2(path: Path): BigInteger =
+fun day07part02(path: Path): BigInteger =
     path
         .readLines()
         .map { line ->

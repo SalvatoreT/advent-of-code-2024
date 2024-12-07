@@ -4,22 +4,22 @@ import kotlin.test.assertEquals
 
 class Day04KtTest {
     @Test
-    fun day04part1_example() {
-        assertEquals(18, day04part1(Path("resources/day04.example.txt")))
+    fun day04part01_example() {
+        assertEquals(18, day04part01(Path("resources/day04.example.txt")))
     }
 
     @Test
-    fun day04part1() {
-        println("Day 04 Part 1 is ${day04part1(Path("resources/day04.input.txt"))}")
+    fun day04part01() {
+        println("Day 04 Part 01 is ${day04part01(Path("resources/day04.input.txt"))}")
     }
 
     @Test
-    fun day04part2_example() {
-        assertEquals(9, day04part2(Path("resources/day04.example.txt")))
+    fun day04part02_example() {
+        assertEquals(9, day04part02(Path("resources/day04.example.txt")))
     }
 
     @Test
-    fun day04part2() {
-        println("Day 04 Part 2 is ${day04part2(Path("resources/day04.input.txt"))}")
+    fun day04part02() {
+        println("Day 04 Part 02 is ${day04part02(Path("resources/day04.input.txt"))}")
     }
 }

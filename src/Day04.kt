@@ -2,7 +2,7 @@ import java.nio.file.Path
 import kotlin.io.path.readLines
 import kotlin.math.max
 
-fun day04part1(path: Path): Int {
+fun day04part01(path: Path): Int {
     val input = path.readLines()
     return listOf(
         input,
@@ -12,7 +12,7 @@ fun day04part1(path: Path): Int {
     ).sumOf { countXmas(it) + countXmasDiagonal(it) }
 }
 
-fun day04part2(path: Path): Int {
+fun day04part02(path: Path): Int {
     val input = path.readLines()
     return listOf(
         input,

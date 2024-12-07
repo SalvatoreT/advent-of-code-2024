@@ -1,7 +1,7 @@
 import java.nio.file.Path
 import kotlin.io.path.readLines
 
-fun day03part1(path: Path): Int =
+fun day03part01(path: Path): Int =
     path
         .readLines()
         .sumOf { line -> scores(line) }
@@ -18,7 +18,7 @@ private fun scores(input: String): Int {
         }.sum()
 }
 
-fun day03part2(path: Path): Int =
+fun day03part02(path: Path): Int =
     path
         .readLines()
         .joinToString()

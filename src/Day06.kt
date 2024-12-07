@@ -7,7 +7,7 @@ enum class Tile {
     Guard,
 }
 
-fun day06part1(path: Path): Int {
+fun day06part01(path: Path): Int {
     val visited = mutableSetOf<Pair<Int, Int>>()
     var velocity = Pair(-1, 0)
     var currentPosition = Pair(0, 0)
@@ -50,7 +50,7 @@ fun day06part1(path: Path): Int {
     return visited.size
 }
 
-fun day06part2(path: Path): Int {
+fun day06part02(path: Path): Int {
     val visited = mutableSetOf<Pair<Int, Int>>()
     var startingVelocity = Pair(-1, 0)
     var startingPosition = Pair(0, 0)
@@ -99,7 +99,7 @@ private fun infiniteLoops(
     var visited = mutableListOf<Pair<Int, Int>>()
     while (floor[position.first]?.contains(position.second) == true) {
         visited += position
-        if (visited.size > 16900) {
+        if (visited.size % 100 == 0) {
             val (lastLeft, lastRight) = visited.takeLast(2)
             val occurrences =
                 visited

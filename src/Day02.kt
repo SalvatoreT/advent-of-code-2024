@@ -2,14 +2,14 @@ import java.nio.file.Path
 import kotlin.io.path.readLines
 import kotlin.math.abs
 
-fun day02part1(path: Path): Int =
+fun day02part01(path: Path): Int =
     path
         .readLines()
         .map { line -> line.split(' ') }
         .map { numbers -> numbers.map { it.toInt() } }
         .count { readings -> isSafe(readings) }
 
-fun day02part2(path: Path): Int =
+fun day02part02(path: Path): Int =
     path
         .readLines()
         .map { line -> line.split(' ') }
