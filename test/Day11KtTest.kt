@@ -5,7 +5,7 @@ import kotlin.test.assertEquals
 class Day11KtTest {
     @Test
     fun day11part01_example() {
-        assertEquals(55312, day11part01(Path("resources/day11.example.txt"), 25))
+        assertEquals(55312.toBigInteger(), day11part01(Path("resources/day11.example.txt"), 25))
     }
 
     @Test
@@ -13,8 +13,8 @@ class Day11KtTest {
         println("Day 11 Part 01 is ${day11part01(Path("resources/day11.input.txt"), 25)}")
     }
 
-//    @Test
-//    fun day11part02() {
-//        println("Day 11 Part 02 is ${day11part01(Path("resources/day11.input.txt"), 75)}")
-//    }
+    @Test
+    fun day11part02() {
+        println("Day 11 Part 02 is ${day11part01(Path("resources/day11.input.txt"), 75)}")
+    }
 }
