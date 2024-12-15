@@ -10,3 +10,6 @@ gradlew.bat
 # Build
 .kotlin
 build
+
+# macOS
+.DS_Store
